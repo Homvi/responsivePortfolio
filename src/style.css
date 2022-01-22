@@ -139,13 +139,29 @@ a:active {
   align-items: center;
 }
 .project-card {
-  width: 200px;
-  height: 400px;
+  width: 320px;
+  height: 610px;
   box-shadow: 0px 0px 8px rgba(107, 107, 107, 0.486);
+  margin: 20px;
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.projects-image {
+  max-width: 300px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+hr {
+  margin: 0px 20px 0px 20px;
+}
+
+.project-link.primary-color{
+  text-decoration: none;
+  color: coral;
 }

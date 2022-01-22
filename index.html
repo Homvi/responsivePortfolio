@@ -23,16 +23,17 @@
       <nav>
         <i class="fab fa-rebel"></i>
         <ul>
-          <li>About me</li>
-          <li>Projects</li>
-          <li>Contact me</li>
+          <li> <a href="#about-me">About me</a></li>
+          <li> <a href="#projects">Projects</a></li>
+          <li> <a href="#contact">Contact me</a></li>
+          
         </ul>
       </nav>
       <div class="hero-area">
         <div class="hero-text">
           <h1>Honvédő Ádám</h1>
           <p>Frontend developer</p>
-          <div class="button">About me</div>
+          <div class="button"><a href="#about-me">About me</a></div>
         </div>
         <div class="socials">
           <a target="new" href="https://github.com/Homvi">
@@ -47,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
       <div class="information">
         <h2>About me</h2>
         <p>
@@ -63,32 +64,75 @@
         />
       </div>
     </section>
-    <section class="sub-section-alternative">
+    <section class="sub-section-alternative"  id="projects">
+      <!-- project cards -->
+
       <h2>Projects</h2>
       <div class="projects-container">
+        <!-- karakoszorcsok -->
+
         <div class="project-card">
-          <img class="projects-image" src="" alt="karakoszorcsok.com" />
+          <img
+            class="projects-image"
+            src="./images/karako.PNG"
+            alt="karakoszorcsok.com"
+          />
           <h3>karakoszorcsok.com</h3>
           <p class="subtext">This is a text that explains the project</p>
           <hr />
-          <p>View here</p>
+          <p>
+            <a
+              class="project-link  primary-color"
+              target="_blank"
+              href="https://karakoszorcsok.com"
+              >View here</a
+            >
+          </p>
         </div>
+
+        <!-- soosandrasband -->
+
         <div class="project-card">
-          <img class="projects-image" src="" alt="karakoszorcsok.com" />
+          <img
+            class="projects-image"
+            src="./images/soosandras.PNG"
+            alt="karakoszorcsok.com"
+          />
           <h3>soosandrasband.com</h3>
           <p class="subtext">This is a text that explains the project</p>
           <hr />
-          <p>View here</p>
+          <p>
+            <a
+            target="_blank"
+            href="https://soosandrasband.com/"
+            class="project-link  primary-color"
+              >View here</a
+            >
+          </p>
         </div>
+
+        <!-- Javascript -->
+
         <div class="project-card">
-          <img class="projects-image" src="" alt="karakoszorcsok.com" />
+          <img
+            class="projects-image"
+            src="./images/memory.PNG"
+            alt="karakoszorcsok.com"
+          />
           <h3>javascriptgame</h3>
           <p class="subtext">This is a text that explains the project</p>
           <hr />
-          <p>View here</p>
+          <p>
+            <a
+              class="project-link primary-color"
+              target="_blank"
+              href="https://github.com/Homvi/colorsMemoryGame"
+              >View here</a
+            >
+          </p>
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer id="contact" ></footer>
   </body>
 </html>
