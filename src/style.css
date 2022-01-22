@@ -40,6 +40,10 @@ ul {
   font-size: 30px;
 }
 
+ul.show{
+  display: block;
+}
+
 li {
   text-decoration: none;
 }
@@ -174,6 +178,10 @@ hr {
 
 .hamburger{
  display: none;
+ cursor: pointer;
+}
+.hamburger:focus{
+ outline: none;
 }
 
 /* for mobile */
@@ -190,9 +198,23 @@ hr {
     background-color: transparent;
     color: white;
     font-size: 30px;
+    align-self: flex-end;
+    margin: 10px;
   }
 
   ul{
+    display: none;
+    background-color: #262731;
+    margin: 0px;
+  }
+  
+  nav{
+    background-color: #262731;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #logo{
     display: none;
   }
 }
