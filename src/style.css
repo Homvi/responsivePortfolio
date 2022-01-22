@@ -218,6 +218,7 @@ hr {
   }
 
   ul {
+    max-width: 80%;
     display: none;
     background-color: #262731;
     margin: 0px;
