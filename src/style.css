@@ -7,12 +7,11 @@ footer {
   color: white;
   text-align: center;
   padding: 80px;
+  background-color: black;
 }
 
 section {
-  width: 100%;
   background-color: white;
-  border: 1px solid black;
 }
 
 .hero {
@@ -22,10 +21,6 @@ section {
   font-size: 40px;
 }
 
-footer {
-  height: 500px;
-  background-color: black;
-}
 
 nav {
   display: flex;
@@ -40,9 +35,6 @@ ul {
   font-size: 30px;
 }
 
-ul.show{
-  display: block;
-}
 
 li {
   text-decoration: none;
@@ -59,8 +51,8 @@ h2 {
 
 p {
   margin: 0;
-  font-weight: 100;
   font-size: 30px;
+  font-weight: 300;
 }
 
 .subtext {
@@ -76,7 +68,7 @@ p {
 }
 
 .hero-text {
-  margin: 80px;
+  margin-left: 80px;
   margin-bottom: 200px;
 }
 
@@ -150,9 +142,9 @@ a:active {
 }
 .project-card {
   width: 320px;
-  height: 610px;
-  box-shadow: 0px 0px 8px rgba(107, 107, 107, 0.486);
-  margin: 20px;
+  height: 640px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
 }
 
 .projects-container {
@@ -164,10 +156,13 @@ a:active {
   width: 300px;
   border-radius: 3px;
   margin: 10px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 hr {
-  margin: 0px 20px 0px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .project-link.primary-color {
@@ -178,11 +173,12 @@ hr {
 
 .hamburger{
  display: none;
- cursor: pointer;
 }
 .hamburger:focus{
  outline: none;
 }
+
+
 
 /* for mobile */
 @media only screen and (max-width: 1000px) {
@@ -200,6 +196,7 @@ hr {
     font-size: 30px;
     align-self: flex-end;
     margin: 10px;
+    cursor: pointer;
   }
 
   ul{
@@ -214,7 +211,12 @@ hr {
     flex-direction: column-reverse;
   }
 
+  ul.show{
+    display: block;
+  }
+
   #logo{
     display: none;
   }
 }
+
