@@ -3,7 +3,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+footer {
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+
 section {
+  width: 100%;
   background-color: white;
   border: 1px solid black;
 }
@@ -34,7 +41,6 @@ ul {
 }
 
 li {
-  /*  width: 200px; */
   text-decoration: none;
 }
 
@@ -147,12 +153,11 @@ a:active {
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .projects-image {
-  max-width: 300px;
+  width: 300px;
   border-radius: 3px;
   margin: 10px;
 }
@@ -161,7 +166,33 @@ hr {
   margin: 0px 20px 0px 20px;
 }
 
-.project-link.primary-color{
+.project-link.primary-color {
   text-decoration: none;
   color: coral;
+}
+
+
+.hamburger{
+ display: none;
+}
+
+/* for mobile */
+@media only screen and (max-width: 1000px) {
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hamburger{
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+  }
+
+  ul{
+    display: none;
+  }
 }
