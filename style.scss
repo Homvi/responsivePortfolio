@@ -1,14 +1,11 @@
 /* background-color: #cec8b7; */
+$primary: white; //(background) ania darkblue color:#1c1d25;;
 
-//(background) ania darkblue color:#1c1d25;;
+$secondary-color: #262731; //$ania-light-blue-color: #1c1d25;
 
-$primary: #1c1d25;
+$third-color: #cec8b7; //brownish color (footer backgroud)
 
-//$ania-light-blue-color: #1c1d25;
-$secondary-color: #262731;
-
-//brownish color (footer backgroud)
-$third-color: #cec8b7;
+$fourth-color: #f59032; //orange primary
 
 html {
   background-color: $primary;
@@ -32,6 +29,10 @@ html {
         li {
           text-decoration: none;
         }
+        li:hover {
+          color: $third-color;
+          transition: 0.13s;
+        }
       }
     }
     section {
@@ -39,7 +40,7 @@ html {
     }
     .hero {
       height: 100vh;
-      color: white;
+      color: rgba(0, 0, 0, 0.884);
       font-size: 40px;
       background-color: $primary;
     }
@@ -101,7 +102,8 @@ a:active {
   height: 55px;
   border-radius: 40px;
   text-align: center;
-  background-color: #cbaa8c;
+  background-color: $fourth-color;
+  color: white;
   padding-bottom: 6px;
   margin-top: 20px;
   cursor: pointer;
@@ -109,7 +111,9 @@ a:active {
 }
 
 .button:hover {
-  background-color: #f59032;
+  background-color: $third-color;
+  color: white;
+  transition: 0.17s;
 }
 .button:active {
   background-color: #a9a9a9;
@@ -159,14 +163,17 @@ a:active {
   text-align: center;
   padding: 80px;
   color: white;
-  background-color: #1c1d25;
+  background-color: white;
+  h2 {
+    color: black;
+  }
   .projects-container {
     display: flex;
     justify-content: space-around;
     .project-card {
       width: 320px;
       height: 640px;
-      box-shadow: 0px 0px 20px rgba(75, 75, 75, 0.425);
+      box-shadow: 0px 0px 20px $secondary-color;
       margin: 10px;
       border-radius: 3px;
       .projects-image {
@@ -184,7 +191,7 @@ a:active {
       }
       .project-link.primary-color {
         text-decoration: none;
-        color: #cbaa8c;
+        color: $fourth-color;
       }
     }
   }
@@ -204,7 +211,7 @@ a:active {
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 45px;
-    color: rgba(255, 255, 255, 0.856);
+    color: rgba(0, 0, 0, 0.856);
   }
 
   h2 {
@@ -219,17 +226,24 @@ a:active {
   html {
     body {
       nav {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column-reverse;
         #logo {
           display: none;
         }
-        background-color: #262731;
-        display: flex;
-        flex-direction: column-reverse;
         ul {
           display: none;
           max-width: 80%;
-          background-color: #262731;
+          background-color: transparent;
           margin: 0px;
+          li {
+            margin: 0px;
+            padding: 5px;
+            border-bottom: 1px solid $third-color;
+            text-align: center;
+            font-size: 25px;
+          }
         }
         ul.show {
           display: block;
@@ -239,7 +253,7 @@ a:active {
         display: block;
         border: 0;
         background-color: transparent;
-        color: white;
+        color: rgba(0, 0, 0, 0.877);
         font-size: 30px;
         align-self: flex-end;
         margin: 5px;
@@ -249,7 +263,7 @@ a:active {
         padding-left: 10px;
       }
       .social-icon {
-        color: rgba(255, 255, 255, 0.747);
+        color: rgba(0, 0, 0, 0.801);
         display: block;
         margin: 10px;
         margin-bottom: 10px;
@@ -280,6 +294,8 @@ a:active {
       }
       footer {
         padding: 10px;
+        color: rgba(0, 0, 0, 0.685);
+        text-shadow: 0px 0px 1px black;
       }
       .button {
         font-size: 25px;
