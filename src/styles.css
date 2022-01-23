@@ -1,3 +1,4 @@
+/* background-color: #cec8b7; */
 html {
   background-color: #1c1d25;
   user-select: none;
@@ -9,6 +10,10 @@ html body {
 html body nav {
   display: flex;
   justify-content: space-between;
+}
+html body nav .fa-rebel {
+  font-size: 60px;
+  margin: 30px;
 }
 html body nav ul {
   width: 500px;
@@ -61,6 +66,14 @@ p {
   user-select: text;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .hero-area {
   display: flex;
   height: 100%;
@@ -98,25 +111,12 @@ p {
   padding-bottom: 200px;
 }
 
-.fa-rebel {
-  font-size: 60px;
-  margin: 30px;
-}
-
 .social-icon {
   display: block;
   margin: 14px;
   margin-bottom: 30px;
   font-size: 45px;
   cursor: pointer;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-  text-decoration: none;
 }
 
 .sub-section {
@@ -126,15 +126,24 @@ a:active {
   background-color: #cec8b7;
   height: 100vh;
 }
-
-.information {
+.sub-section .information {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-/* background-color: #cec8b7; */
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+.headshot-container .headshot {
+  height: 500px;
+  border-radius: 40px;
+  margin: 20px;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.349);
+}
+
 .sub-section-alternative {
   display: flex;
   flex-direction: column;
@@ -142,18 +151,6 @@ a:active {
   padding: 80px;
   color: white;
   background-color: #1c1d25;
-}
-
-.headshot {
-  height: 500px;
-  border-radius: 40px;
-  margin: 20px;
-  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.349);
-}
-
-.headshot-container {
-  display: flex;
-  align-items: center;
 }
 
 .projects-container {
