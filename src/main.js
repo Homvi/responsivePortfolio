@@ -8,3 +8,5 @@ function toggleButton() {
 }
 
 haamburgerButton.addEventListener("click", toggleButton)
+
+console.log("Hello");
